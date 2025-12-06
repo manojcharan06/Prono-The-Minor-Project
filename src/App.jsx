@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Feed from "./pages/Feed";
@@ -9,11 +9,9 @@ import Register from "./pages/Register";
 
 import MainLayout from "./components/Layout/MainLayout";
 
-
 const App = () => {
   return (
     <Routes>
-
       {/* Pages WITH sidebar */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<Feed />} />
@@ -24,9 +22,8 @@ const App = () => {
       {/* Pages WITHOUT sidebar */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-
     </Routes>
-  )
-}
+  );
+};
 
-export default App
+export default App;
